@@ -1,0 +1,13 @@
+<h3>Post Form</h3>
+
+<form action="/posts" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="uQUOmh8edu8S/x5mVqp4aMpqEkHGbBYCdY6NVrvBut7PjNAUyVpsMOYQn2vS1X9kJ6aJJA++za/ZzcNvRwkMFQ==" />
+  <label>Post title:</label><br>
+  <input type="text" name="title" id="title" /><br>
+
+  <label>Post Description</label><br>
+  <textarea name="description" id="description"></textarea><br>
+
+  <input type="submit" name="commit" value="Submit Post" />
+</form>
+
+<%= params.inspect %>
